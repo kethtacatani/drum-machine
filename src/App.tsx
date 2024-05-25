@@ -27,7 +27,6 @@ function App() {
     setVolume(parseFloat(event.target.value));
   };
 
-  let newAudio: HTMLAudioElement;
   const handleClick = (title: string, key: string) => {
     if (isPowerOn) {
       setAudioPlaying(getAudioPlaying(title));
