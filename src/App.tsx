@@ -11,7 +11,7 @@ function App() {
   const [isPowerOn, setIsPowerOn] = useState(true);
   const [isBankOn, setIsBankOn] = useState(false);
   const [audioPlaying, setAudioPlaying] = useState(getAudioPlaying(""));
-  const [volume, setVolume] = useState(1);
+  const [volume, setVolume] = useState(80);
 
   
   const handleTogglePower = () => {
