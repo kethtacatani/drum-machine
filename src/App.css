@@ -1,0 +1,120 @@
+:root {
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: rgb(255, 104, 104);
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: url("public/bg.jpg");
+  background-size: cover;
+}
+
+
+
+#drum-machine{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+#display{
+  display:flex;
+  flex-direction: row;
+  background-color: #1282A2;
+  border-radius: 0.5em;
+  margin: 2em;
+}
+
+#pad-name{
+  width: 10vh;
+  text-align: center;
+  color:black;
+  width: 100%;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pad-name-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 20px;
+  width: 90px;
+  margin: .5em;
+  border-radius: 2px;
+}
+.pads, .right-pad{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-family: inherit;
+  font-size: 8px;
+  margin: 0;
+}
+
+.switch{
+  background-color: rgba(52, 52, 52, 0.564);
+  height: 10px;
+  width: 30px;
+  border-radius: 2px;
+}
+.inner{
+  height: 100%;
+  border-radius: 2px;
+  width: 50%;
+  background: rgb(8, 4, 52);
+}
+
+.drum-pad{
+  border: 0px solid transparent;
+  border-radius: 2px;
+  height: 40px;
+  width: 40px;
+  margin: 0.3em;
+  font-size: 8px;
+}
+.drum-pad:active {
+  background-color: #5cd5eb;
+  color: black;
+}
+.range{
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  width: 100px; /* Full-width */
+  height: 4px; /* Slider track height */
+  background: #ddd; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Semi-transparent */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  cursor: pointer;
+  border-radius: 1px;
+  margin-top: 0.5em;
+  margin-bottom: 0.6em;
+  
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -12px; /* Centers thumb on the track */
+  background-color: #5cd5eb;
+  height: 1rem;
+  width: 0.5rem;    
+  margin-top: 0px;
+  border-radius: 1px;
+}
+
+@media screen and (max-width: 600px) {
+  #display {
+    flex-direction: column;
+  }
+}
