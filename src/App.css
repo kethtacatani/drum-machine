@@ -41,10 +41,12 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  height: 20px;
-  width: 90px;
-  margin: .5em;
+  height: 40px;
+  width: 160px;
+  margin-bottom: 1.2em;
+  margin-top: 1.5em;
   border-radius: 2px;
+  
 }
 .pads, .right-pad{
   display: flex;
@@ -52,6 +54,10 @@
   margin: 0.5em;
   justify-content: center;
   align-items: center;
+}
+
+.right-pad{
+  margin-right: 1em;
 }
 
 p{
@@ -67,8 +73,8 @@ p{
 
 .switch{
   background-color: rgba(52, 52, 52, 0.564);
-  height: 15px;
-  width: 40px;
+  height: 20px;
+  width: 50px;
   border-radius: 2px;
   
 }
@@ -94,8 +100,8 @@ p{
 .range{
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
-  width: 100px; /* Full-width */
-  height: 4px; /* Slider track height */
+  width: 160px; /* Full-width */
+  height: 8px; /* Slider track height */
   background: #ddd; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Semi-transparent */
@@ -104,7 +110,7 @@ p{
   cursor: pointer;
   border-radius: 1px;
   margin-top: 0.5em;
-  margin-bottom: 0.6em;
+  margin-bottom: 1.3em;
   
 }
 
