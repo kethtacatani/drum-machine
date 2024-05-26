@@ -56,15 +56,21 @@
 
 p{
   font-family: inherit;
-  font-size: 8px;
+  font-size: 12px;
   margin: 0;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .switch{
   background-color: rgba(52, 52, 52, 0.564);
-  height: 10px;
-  width: 30px;
+  height: 15px;
+  width: 40px;
   border-radius: 2px;
+  
 }
 .inner{
   height: 100%;
@@ -75,11 +81,11 @@ p{
 
 .drum-pad{
   border: 0px solid transparent;
-  border-radius: 2px;
-  height: 40px;
-  width: 40px;
+  border-radius: 5px;
+  height: 80px;
+  width: 80px;
   margin: 0.3em;
-  font-size: 8px;
+  font-size: 15px;
 }
 .drum-pad:active {
   background-color: #5cd5eb;

@@ -52,7 +52,10 @@ function App() {
     <>
       <div id="drum-machine">
         <div id="display">
+        
           <div className="pads">
+      <p className="title">Drum Machine</p>
+
             <div className="pad-row">
               <button 
                 onKeyDown={handleKeyPress}
